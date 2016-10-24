@@ -1,0 +1,30 @@
+{
+  "name": "seriu-portfolio-sass",
+  "version": "1.0.1",
+  "description": "Portfolio project using sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "seriu-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seriu15/SASS.git"
+  },
+  "keywords": [
+    "Sebastian_Rojek",
+    "portfolio",
+    "sass"
+  ],
+  "author": "Sebastian Rojek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seriu15/SASS/issues"
+  },
+  "homepage": "https://github.com/seriu15/SASS#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.2.1"
+  }
+}
