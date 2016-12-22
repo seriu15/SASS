@@ -12,6 +12,12 @@ body {
 p {
   margin: 0; }
 
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important; }
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -124,11 +130,15 @@ p {
 /* HEADER */
 header {
   background: #313332; }
-  header > nav > img {
-    display: block;
+  header > nav > .logo {
+    display: inline-block;
     width: 150px;
     margin: 10px auto;
-    cursor: pointer; }
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #FFF; }
   header > nav > ul {
     margin: 0;
     padding: 0;
@@ -169,14 +179,14 @@ label {
 /* HERO */
 .hero {
   background: url(https://images.unsplash.com/photo-1469521669194-babb45599def?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb) 0/cover no-repeat;
-  height: 400px; }
+  height: 80vh; }
 
 .slogan {
   background: rgba(0, 0, 0, 0.5);
   float: right;
   max-width: 700px;
   padding: 20px;
-  margin-top: 100px; }
+  margin-top: 18vh; }
   .slogan h1, .slogan p {
     line-height: 35px;
     font-size: 25px;
@@ -348,16 +358,51 @@ div.border {
   .footer .icons {
     text-align: left;
     margin-top: 20px; }
-  .footer i {
-    font-size: 20px;
-    padding: 10px 5px;
-    width: 45px;
-    background: #25CBE5;
+    .footer .icons .icon-btn {
+      float: left;
+      width: 50px;
+      height: 50px;
+      border-width: 0;
+      cursor: pointer;
+      font-size: 30px;
+      line-height: 50px;
+      border-radius: 50%;
+      margin: 10px;
+      transition: 0.7s; }
+      .footer .icons .icon-btn:hover {
+        transform: scale(1.15); }
+      .footer .icons .icon-btn:active {
+        border-radius: 50%; }
+
+.twitter {
+  color: #4099FF; }
+  .twitter:hover {
     color: #FFF;
-    border-radius: 20%;
-    text-align: center;
-    cursor: pointer;
-    display: inline-block; }
+    background: #4099FF; }
+
+.facebook {
+  color: #3B5998; }
+  .facebook:hover {
+    color: #FFF;
+    background: #3B5998; }
+
+.google-plus {
+  color: #DB5A3C; }
+  .google-plus:hover {
+    color: #FFF;
+    background: #DB5A3C; }
+
+.instagram {
+  color: #5C3D2E; }
+  .instagram:hover {
+    color: #FFF;
+    background: #5C3D2E; }
+
+.github {
+  color: #4183C4; }
+  .github:hover {
+    color: #FFF;
+    background: #4183C4; }
 
 footer .container {
   margin: 0 auto; }

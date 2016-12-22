@@ -3,26 +3,29 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>SASS + git</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="Projekt na zlecenie">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="CSS/style.css">
 	</head>
 
-	<body>
+	<body class="preload">
 
 <!-- HEADER -->
-		<header>
-			<nav class="container row"> <!-- poprawić -->
-				<img src="http://placekitten.com/150/30">
+		<header id="home">
+			<nav class="container row">
+				<div class="logo">
+					LOGO
+				</div>
 				<input type="checkbox" id="menu-button"/>
          		<label for="menu-button">&#9776;</label>
 				<ul>
-					<li><a href="#">HOME</a></li>
-					<li><a href="#">PAGES</a></li>
-					<li><a href="#">FEATURE</a></li>
-					<li><a href="#">SERVICES</a></li>
+					<li><a href="#home">HOME</a></li>
+					<li><a href="#pages">PAGES</a></li>
+					<li><a href="#feature">FEATURE</a></li>
+					<li><a href="#services">SERVICES</a></li>
 					<li><a href="#">BLOG</a></li>
-					<li><a href="#">CONTACT</a></li>
+					<li><a href="#contact">CONTACT</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -36,7 +39,7 @@
 		</section>
 
 <!-- SECTION PROFIT -->
-		<section class="profit">
+		<section id="pages" class="profit">
 			<div class="container">
 				<div class="row">
 					<div class="col-m-4">
@@ -59,7 +62,7 @@
 		</section>
 
 <!-- SECTION TEXT -->
-		<section>
+		<section id="feature">
 			<div class="container">
 				<div class="row">
 					<h2>featured works</h2>
@@ -189,7 +192,7 @@
 		</section>
 
 <!-- SECTION PROMO -->
-		<section class="promo promo-background">
+		<section id="services" class="promo promo-background">
 			<div class="container">
 				<div class="row">
 					<div class="col-m-5 relative">
@@ -247,7 +250,7 @@
 							</div>
 							<p>Sed fringilla sodales ipsum vel porttitor. Etiam sodales sapien vel urna porta dictum. Mauris lobortis sed nisi in semper. Integer eget eleifend magna, eget facilisis enim.</p>
 						</div>
-						<div class="col-m-4">
+						<div id="contact" class="col-m-4">
 							<div class="border">
 								<h2>Get in touch</h2>
 							</div>
@@ -286,12 +289,21 @@
 								<p>Morbi at efficitur turpis, vitae tempus metus. Suspendisse vel est pretium lacus.</p>
 							</div>
 							<div class="icons col-s-6">
-								<i class="fa fa-youtube" aria-hidden="true"></i>
-								<i class="fa fa-google-plus" aria-hidden="true"></i>
-								<i class="fa fa-facebook" aria-hidden="true"></i>
-								<i class="fa fa-dribbble" aria-hidden="true"></i>
-								<i class="fa fa-twitter" aria-hidden="true"></i>
-								<i class="fa fa-instagram" aria-hidden="true"></i>
+								<button class="icon-btn twitter">
+									<i class="fa fa-twitter"></i>
+								</button>
+								<button class="icon-btn facebook">
+									<i class="fa fa-facebook"></i>
+								</button>
+								<button class="icon-btn google-plus">
+									<i class="fa fa-google-plus"></i>
+								</button>
+								<button class="icon-btn instagram">
+									<i class="fa fa-instagram"></i>
+								</button>
+								<button class="icon-btn github">
+									<i class="fa fa-github"></i>
+								</button>
 							</div>
 						</div>
 					</div>
@@ -303,6 +315,6 @@
 				</div>
 			</section>
 		</footer>
-
+		<script src="js/script.js"></script>
 	</body>
 </html>
