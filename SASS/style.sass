@@ -3,7 +3,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic)
 @import url(https://fonts.googleapis.com/css?family=Raleway:800,900)
 
-$header: #313332
+$header: #404040
 
 /* ALL */
 
@@ -13,6 +13,7 @@ $header: #313332
 body
 	margin: 0
 	font-family: 'Open Sans', sans-serif
+	min-width: 320px
 
 p
 	margin: 0
@@ -24,7 +25,6 @@ p
   -o-transition: none !important
 
 @import susy
-
 
 
 /* HEADER */
@@ -83,8 +83,6 @@ label
 
 
 
-
-
 /* HERO */
 
 .hero
@@ -106,8 +104,6 @@ label
 
 h1
 	font-weight: 700
-
-
 
 
 
@@ -147,8 +143,6 @@ section
 
 	h2
 		text-transform: uppercase
-
-
 
 
 
@@ -197,13 +191,12 @@ section
 		display: none
 
 	div[class*="col-"]
-		.layer
-			display: block
-			z-index: 10
-			position: relative
-			height: 200px
-
-
+		&:hover
+			.layer
+				display: block
+				z-index: 10
+				position: relative
+				height: 200px
 
 
 
@@ -248,7 +241,6 @@ section
 
 
 
-
 /* PROMO SECTION */
 
 .promo
@@ -274,7 +266,7 @@ section
 
 .number
 	font-family: 'Raleway', sans-serif
-	font-size: 70px
+	font-size: 60px
 	font-weight: 900
 
 .number-desc
@@ -311,6 +303,7 @@ div.border
 
 	p
 		text-align: left
+		color: #CACCCB
 
 	.icons
 		text-align: left
@@ -325,12 +318,13 @@ div.border
     font-size: 30px
     line-height: 50px
     border-radius: 50%
-    margin: 10px
+    margin: 9px
     transition: 0.7s
     &:hover
       transform: scale(1.15)
     &:active
       border-radius: 50%
+
 
 
 .twitter
@@ -375,6 +369,9 @@ footer .container
 	font-size: 20px
 	color: #FFF
 
+
+#pages p, #feature p, #services p, footer
+	line-height: 24px
 
 /*   --ANIMATION--   */
 
@@ -570,12 +567,16 @@ footer .container
 		bottom: 0
 
 	.promo-background
-		background: url("http://i1060.photobucket.com/albums/t450/seriu/css-patterns/d5ec85f2_zpsztgdihsm.png") repeat
+		background: $header
 		width: 100%
 		height: 319px
 
-	.promo h2
-		margin-top: 25px
+	.promo
+		h2
+			margin-top: 25px
+			color: #FFF
+		p
+			color: #CACCCB
 
 	.gallery
 		i

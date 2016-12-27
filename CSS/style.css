@@ -7,7 +7,8 @@
 
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  min-width: 320px; }
 
 p {
   margin: 0; }
@@ -129,7 +130,7 @@ p {
 
 /* HEADER */
 header {
-  background: #313332; }
+  background: #404040; }
   header > nav > .logo {
     display: inline-block;
     width: 150px;
@@ -200,7 +201,7 @@ h1 {
 .profit i {
   font-size: 80px;
   padding: 15px;
-  background: #313332;
+  background: #404040;
   color: #FFF;
   border-radius: 20%;
   width: 120px;
@@ -252,7 +253,7 @@ section h2 {
 .gallery i {
   font-size: 38px;
   padding: 15px;
-  background: #313332;
+  background: #404040;
   color: #FFF;
   border-radius: 20%;
   cursor: pointer;
@@ -267,7 +268,7 @@ section h2 {
   margin: 0 auto;
   display: none; }
 
-.gallery div[class*="col-"] .layer {
+.gallery div[class*="col-"]:hover .layer {
   display: block;
   z-index: 10;
   position: relative;
@@ -324,7 +325,7 @@ section h2 {
 /* NUMBER SECTION */
 .number {
   font-family: 'Raleway', sans-serif;
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 900; }
 
 .number-desc {
@@ -343,18 +344,19 @@ div.border {
   min-height: 50px; }
 
 .footer {
-  background: #313332;
+  background: #404040;
   color: #FFF; }
   .footer h2 {
     position: relative;
     bottom: -17px;
-    background: #313332;
+    background: #404040;
     padding: 0 10px;
     margin: 0;
     display: inline-block;
     text-align: left; }
   .footer p {
-    text-align: left; }
+    text-align: left;
+    color: #CACCCB; }
   .footer .icons {
     text-align: left;
     margin-top: 20px; }
@@ -367,7 +369,7 @@ div.border {
       font-size: 30px;
       line-height: 50px;
       border-radius: 50%;
-      margin: 10px;
+      margin: 9px;
       transition: 0.7s; }
       .footer .icons .icon-btn:hover {
         transform: scale(1.15); }
@@ -414,6 +416,9 @@ footer .container {
   line-height: 60px;
   font-size: 20px;
   color: #FFF; }
+
+#pages p, #feature p, #services p, footer {
+  line-height: 24px; }
 
 /*   --ANIMATION--   */
 .animation-left {
@@ -564,11 +569,14 @@ footer .container {
     position: absolute;
     bottom: 0; }
   .promo-background {
-    background: url("http://i1060.photobucket.com/albums/t450/seriu/css-patterns/d5ec85f2_zpsztgdihsm.png") repeat;
+    background: #404040;
     width: 100%;
     height: 319px; }
   .promo h2 {
-    margin-top: 25px; }
+    margin-top: 25px;
+    color: #FFF; }
+  .promo p {
+    color: #CACCCB; }
   .gallery i {
     font-size: 22px;
     margin-top: 77px;
